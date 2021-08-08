@@ -147,7 +147,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="145dp">
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/user_cancel"
@@ -155,15 +155,21 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#ffdedede"
             android:text="취소"
-            android:layout_marginTop="100dp"
-            android:layout_marginStart="200dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="20dp"/>
         <Button
             android:id="@+id/user_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/cardview_dark_background"
-            android:layout_marginTop="100dp"
+            android:text="확인"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
             android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
             android:layout_toRightOf="@+id/user_cancel"/>
     </RelativeLayout>
 
