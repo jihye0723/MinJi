@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    // 상단바
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/up_bar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘의 일기장"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    //일기 작성란
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="522dp"
+        android:layout_margin="30dp"
+
+        android:orientation="vertical">
+        // 제목 작성란
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:hint="제목을 입력하세요 ." />
+        // 내용 작성란
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:hint="오늘은 어떤 하루를 보내셨나요 ? "
+            android:gravity="top" />
+        // 친구 공개 전체공개 스위치
+        <Switch
+            android:id="@+id/switch_diary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:text="친구만 봐"
+            android:padding="10dp"
+            android:textSize="18dp"/>
+        //등록하기 버튼
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/purple_200"
+            android:text="등록하기"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
