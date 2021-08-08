@@ -32,10 +32,18 @@
         android:text="친구 "
         android:textSize="18dp"/>
 
+    // 중간 메인 화면 내용
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="569dp">
-        //중간에 일기 들어갈 내용</LinearLayout>
+        android:layout_height="572dp"
+        android:layout_marginHorizontal="20dp">
+        // 동적 리스트뷰 생성
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
