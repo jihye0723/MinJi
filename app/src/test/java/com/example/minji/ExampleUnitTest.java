@@ -1,4 +1,4 @@
-package com.example.minjihye;
+package com.example.minji;
 
 import org.junit.Test;
 
