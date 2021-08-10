@@ -57,6 +57,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="650dp"
+        android:layout_weight="2"
         android:layout_marginHorizontal="20dp" />
 
     <LinearLayout
