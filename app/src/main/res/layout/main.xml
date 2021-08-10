@@ -13,7 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:background="@drawable/up_bar" />
+
         <TextView
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="아이유어스"
@@ -21,6 +23,24 @@
             android:textSize="25dp"
             android:layout_centerInParent="true"
             />
+
+        <ImageView
+            android:id="@+id/main_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title"
+            android:layout_marginStart="55dp"
+            android:src="@drawable/person_add"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/main_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_friend"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/alarm"
+            android:layout_centerInParent="true"/>
+
     </RelativeLayout>
 
     <Switch
@@ -32,32 +52,41 @@
         android:text="친구 "
         android:textSize="18dp"/>
 
-    // 중간 메인 화면 내용
+        // 동적 리스트뷰 생성
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginHorizontal="20dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="572dp"
-        android:layout_marginHorizontal="20dp">
-        // 동적 리스트뷰 생성
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        android:layout_height="73dp"
+        android:weightSum="3"
+        android:background="@drawable/down_bar" >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/friend_group"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/write"
+            android:layout_weight="1"/>
+        <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/mypage"
+        android:layout_weight="1"/>
+
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/down_bar"/>
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/down_bar"/>
 
-</LinearLayout>
+
+

@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
 
     <TextView
@@ -166,6 +165,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/cardview_dark_background"
             android:text="확인"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginTop="80dp"
             android:layout_marginStart="10dp"
